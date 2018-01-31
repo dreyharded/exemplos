@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title></title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <style>
+    input[type="text"] {background-color: #fff;color:#000}
+    input:invalid{background-color: yellow;color: red}
+    
+  </style>
+</head>
+<body>
+  <form class="form-horizontal">
+<fieldset>
+
+<!-- Form Name -->
+<legend>formulario</legend>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="txt_nome">nome</label>  
+  <div class="col-md-4">
+  <input id="txt_nome" name="txt_nome" type="text" placeholder="" class="form-control input-md" required="">
+  <span class="help-block">digite seu nome completo </span>  
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="txt_cidade">cidade</label>  
+  <div class="col-md-4">
+  <input id="txt_cidade" name="txt_cidade" type="text" placeholder="" class="form-control input-md" required="">
+  <span class="help-block">digite o nome da sua cidade</span>  
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="text_estado">estado</label>  
+  <div class="col-md-1">
+  <input id="text_estado" name="text_estado" type="text" placeholder="" class="form-control input-md" required="">
+  <span class="help-block">digite as abreviaçao</span>  
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="text_cpf">cpf</label>  
+  <div class="col-md-4">
+  <input id="text_cpf" name="text_cpf" type="text" placeholder="" 
+  class="form-control input-md" required="" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" title ="digite o cpf com todos os digitos"
+  >
+  <span class="help-block">digite o seu cpf </span>  
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="text_cep">CEP</label>  
+  <div class="col-md-4">
+  <input id="text_cep" name="text_cep" type="text" placeholder="" class="form-control input-md" required="">
+  <span class="help-block">nao usar /</span>  
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="txt_date">data de nascimento</label>  
+  <div class="col-md-4">
+  <input id="txt_date" name="txt_date" type="date" placeholder="" class="form-control input-md" required="">
+  <span class="help-block">digite a data em que voçe nasceu como exemplo a seguir 00/00/0000</span>  
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="text_email">E-mail</label>  
+  <div class="col-md-4">
+  <input id="text_email" name="text_email" type="email" placeholder="" class="form-control input-md" required="">
+  <span class="help-block">digite o seu E-mail pessoal</span>  
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="text_idade">idade</label>  
+  <div class="col-md-4">
+  <input id="text_idade" name="text_idade" type="number" placeholder="" class="form-control input-md" required="">
+  <span class="help-block">digite a sua idade </span>  
+  </div>
+</div>
+
+<!-- Textarea -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="text_software">software</label>
+  <div class="col-md-4">                     
+    <textarea class="form-control" id="text_software" name="text_software"></textarea>
+  </div>
+</div>
+
+<!-- Multiple Radios -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="radios_sexo">sexo</label>
+  <div class="col-md-4">
+  <div class="radio">
+    <label for="radios_sexo-0">
+      <input type="radio" name="radios_sexo" id="radios_sexo-0" value="1">
+      masculino
+    </label>
+  </div>
+  <div class="radio">
+    <label for="radios_sexo-1">
+      <input type="radio" name="radios_sexo" id="radios_sexo-1" value="2">
+      feminino
+    </label>
+  </div>
+  </div>
+</div>
+
+<!-- Select Multiple -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="select_estadocivil">estado civil</label>
+  <div class="col-md-4">
+    <select id="select_estadocivil" name="select_estadocivil" class="form-control" multiple="multiple">
+      <option value="1">solteiro</option>
+      <option value="2">casado</option>
+      <option value="">divorciado</option>
+    </select>
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="tex_tel">celular</label>  
+  <div class="col-md-4">
+  <input id="tex_tel" name="tex_tel" type="tel" placeholder="" class="form-control input-md" required="">
+  <span class="help-block">digite o nume do seu celular</span>  
+  </div>
+</div>
+
+<!-- Password input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="passwor_input">Password </label>
+  <div class="col-md-4">
+    <input id="passwor_input" name="passwor_input" type="password" placeholder="" class="form-control input-md" required="">
+    <span class="help-block">digite sua senha</span>
+  </div>
+</div>
+
+<!-- Button -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="button_enviar"></label>
+  <div class="col-md-4">
+    <button id="button_enviar" name="button_enviar" class="btn btn-primary">enviar</button>
+  </div>
+</div>
+
+</fieldset>
+</form>
+  
+</body>
+</html>
